@@ -1,0 +1,4 @@
+#! /bin/bash 
+
+temp="$(python ~/applications/dwmblocks-distrotube/scripts/cpu.py)"
+echo -e "$temp "
