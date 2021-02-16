@@ -1,4 +1,4 @@
 #! /bin/bash 
 
-temp="$(python ~/applications/dwmblocks-distrotube/scripts/net.py 10)"
+temp="$(python ~/applications/dwmblocks/scripts/net.py 10)"
 echo -e "$temp "
