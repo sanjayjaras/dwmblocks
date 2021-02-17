@@ -1,16 +1,18 @@
 #!/bin/bash 
 mute="$(amixer get Master|tail -1|awk '{print $6}')"
+output=""
 if [ "$mute" = "[off]" ]; then  
-    echo "🔇 M"
+    output="🔇 M"
 else
     vol="$(amixer get Master|tail -1|awk '{print $5}'|tr [ ' '|tr ] ' '|tr % ' ')"
     vol=$(($vol + 0))
     #echo "${vol}% "
     if [ $vol -lt 30 ]; then
-        echo " ${vol}% "
+        output=" ${vol}% "
     elif [ $vol -lt 60 ]; then
-        echo " ${vol}% "
+        output=" ${vol}% "
     else
-        echo " ${vol}% "
+        output=" ${vol}% "
     fi
 fi
+echo -e "\x04 $output"

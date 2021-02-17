@@ -1,4 +1,4 @@
 #! /bin/bash 
 
 temp="$(nvidia-settings -q gpucoretemp | awk 'NR==2{print substr($4,1,2) }')"
-echo -e "$temp°C "
+echo -e "\x04 \uf76b $temp°C "

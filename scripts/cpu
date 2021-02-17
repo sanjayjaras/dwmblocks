@@ -1,4 +1,3 @@
 #! /bin/bash 
-
 temp="$(python ~/applications/dwmblocks/scripts/cpu.py)"
-echo -e "$temp "
+echo -e "\x04\uf2db $temp "
