@@ -1,4 +1,4 @@
 #! /bin/bash 
 
 dte="$(date +"%a, %b %d %l:%M%p"| sed 's/  / /g')"
-echo -e "\x04 \uf073 $dte"
+echo -e "$dte"

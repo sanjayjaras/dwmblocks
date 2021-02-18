@@ -5,19 +5,21 @@ import pathlib
 import ast
 
 fname = "net.txt"
-kb = 1024
+kb = 1000
 mb = kb * kb
 gb = mb * kb
 
 def format_speed(speed:int)->str:
+    speed *= 8
+    txt = "{:3.0f}{}"
     if speed > gb:
-        return str(round(speed/gb))+"GB"
+        return txt.format(round(speed/gb),"Gb")
     elif speed > mb:
-        return str(round(speed/mb))+"MB"
+        return txt.format(round(speed/mb),"Mb")
     elif speed > kb:
-        return str(round(speed/kb))+"KB"
+        return txt.format(round(speed/kb),"Kb")
     else:
-        return str(round(speed/mb))+"B"
+        return txt.format(round(speed), "b")
 
 if __name__ == "__main__":
     interval = int(sys.argv[1])

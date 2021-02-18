@@ -1,4 +1,4 @@
 #! /bin/bash 
 
 temp="$(python ~/applications/dwmblocks/scripts/net.py 10)"
-echo -e "\x03 $temp "
+echo -e "$temp "

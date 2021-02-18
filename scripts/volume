@@ -15,4 +15,4 @@ else
         output=" ${vol}% "
     fi
 fi
-echo -e "\x04 $output"
+echo -e " $output"
