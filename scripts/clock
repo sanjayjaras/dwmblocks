@@ -10,4 +10,4 @@ case $BUTTON in
 esac
 
 dte="$(date +"%a, %b %d %l:%M%p"| sed 's/  / /g')"
-echo -e "$dte"
+echo -e "$dte "

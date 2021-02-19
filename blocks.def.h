@@ -16,9 +16,9 @@ static const Block blocks[] = {
 	//Refresh interval is hardcoded shell script if changed here need to change in file
 	{"\x04 ", "~/applications/dwmblocks/scripts/net",	        10,		            1},
 
-	{"\x05", "~/applications/dwmblocks/scripts/volume",			5,		            10},
+	{"\x05 ", "~/applications/dwmblocks/scripts/volume",			5,		            10},
 
-	{"\x06\uf2f1 ", "~/applications/dwmblocks/scripts/pacupdate",			600,		            11},
+	{"\x06 \uf2f1", "~/applications/dwmblocks/scripts/pacupdate",			600,		            11},
 
 	{"\x07 \uf073 ", "~/applications/dwmblocks/scripts/clock",			10,		            0},
 	{"\x08  ", "", -1, 10},
