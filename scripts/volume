@@ -1,4 +1,16 @@
 #!/bin/bash 
+
+case $BUTTON in
+	1) pavucontrol ;;
+	2) notify-send "Volume" "Click for Settings
+    Right click for equalizer";;
+	3) pulseaudio-equalizer-gtk ;;
+	
+	
+
+esac
+
+
 mute="$(amixer get Master|tail -1|awk '{print $6}')"
 output=""
 if [ "$mute" = "[off]" ]; then  
@@ -15,4 +27,4 @@ else
         output=" ${vol}% "
     fi
 fi
-echo -e " $output"
+echo -e "$output"

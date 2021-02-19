@@ -1,4 +1,14 @@
 #!/bin/bash
 
+case $BUTTON in
+	1) st -e paru -Syu ;;
+	2) notify-send "Pamac Update" "Click for update Right click for pacman";;
+	3) pamac-manager ;;
+	
+	
+
+esac
+
+
 cupd=$(checkupdates | wc -l)
 echo -e "$cupd "

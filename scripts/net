@@ -1,4 +1,12 @@
 #! /bin/bash 
 
+case $BUTTON in
+	1) blueman-manager ;;
+	2) notify-send "Network" "Click for Wifi Manager
+    Right click Bluetooth Manager";;
+	3) nm-applet ;;
+	
+esac
+
 temp="$(python ~/applications/dwmblocks/scripts/net.py 10)"
 echo -e "$temp "

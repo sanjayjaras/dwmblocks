@@ -1,4 +1,13 @@
 #! /bin/bash 
+case $BUTTON in
+	1) notify-send "🧠 GPU Details" "$(nvidia-smi)" ;;
+	2) notify-send "Nvidia GPU" "\- Shows GPU Temp.";;
+	3) st -e nvidia-settings ;;
+	
+	
+
+esac
+
 
 temp="$(nvidia-settings -q gpucoretemp | awk 'NR==2{print substr($4,1,2) }')"
 echo -e "$temp°C "
