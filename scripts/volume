@@ -20,11 +20,11 @@ else
     vol=$(($vol + 0))
     #echo "${vol}% "
     if [ $vol -lt 30 ]; then
-        output=" ${vol}% "
+        output="\uf026 ${vol}% "
     elif [ $vol -lt 60 ]; then
-        output=" ${vol}% "
+        output="\uf027 ${vol}% "
     else
-        output=" ${vol}% "
+        output="\uf028 ${vol}% "
     fi
 fi
 echo -e "$output"
