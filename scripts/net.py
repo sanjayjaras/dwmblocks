@@ -45,7 +45,10 @@ if __name__ == "__main__":
 
         down_byte_sec = (down - dictionary["down"]) / interval
         up_byte_sec = (up - dictionary["up"])  / interval
-        print("\uf103", format_speed(down_byte_sec), "\uf102", format_speed(up_byte_sec), end="")
+        result = "\uf103 {} \uf102 {}".format(format_speed(down_byte_sec), format_speed(up_byte_sec))
+        print(result, end="")
+
+
 
     else:
         with open(fname, "w") as txt_file:

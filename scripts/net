@@ -9,4 +9,4 @@ case $BUTTON in
 esac
 
 temp="$(python ~/applications/dwmblocks/scripts/net.py 10)"
-echo -e "$temp "
+echo -e "${temp} "
