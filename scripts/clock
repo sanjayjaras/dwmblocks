@@ -1,13 +1,10 @@
 #! /bin/bash 
 
 case $BUTTON in
-	1) gnome-calendar ;;
-	2) notify-send "Clock" "Click for Calendar Right click for Mails";;
-	3) ~/applications/ThunderbirdBeta-85.0_20201230181703_6f9dd78d6bff0f73e914167bbc377111.AppImage ;;
-	
-	
-
+    1) thunderbird ;;
+    2) notify-send "Clock" "Click for Calendar Right click for Mails";;
+    3) kitty -e nvim "$0" ;;
 esac
 
-dte="$(date +"%a, %b %d %l:%M%p"| sed 's/  / /g')"
+dte="$(date +"%a %b-%d %l:%M%p"| sed 's/  / /g')"
 echo -e "$dte "

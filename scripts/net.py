@@ -12,6 +12,8 @@ gb = mb * kb
 def format_speed(speed:int)->str:
     speed *= 8
     txt = "{:2.0f}{}"
+    if speed < 0:
+        speed = 0
     if speed > gb:
         return txt.format(round(speed/gb),"Gb")
     elif speed > mb:

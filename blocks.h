@@ -7,22 +7,34 @@ static const Block blocks[] = {
 
 	//{" 📦 ", "~/applications/dwmblocks-distrotube/scripts/pacupdate",		360,		        9},
 
-	{"\x01 \uf2db ", "~/applications/dwmblocks/scripts/cpu",	        6,		            1},
 	
-	{"\x02 \uf538 ", "~/applications/dwmblocks/scripts/memory",	        6,		            1},
+	{"^c#ff2add^", "~/applications/dwmblocks/scripts/play_prev",	        3600,		            11},
 
-	{"\x03 \uf76b ", "~/applications/dwmblocks/scripts/gpu-temp",        10,		            1},
+	{"^c#7ccbff^", "~/applications/dwmblocks/scripts/play_pause",	        5,		            12},
+
+	{"^c#ff2add^  ", "~/applications/dwmblocks/scripts/play_next",	        3600,		            13},
+
+	//{"^c#7ccbff^  ", "~/applications/dwmblocks/scripts/show_playing",	        10,		            0},
+
+	{"^c#7ccbff^  ", "~/applications/dwmblocks/scripts/cpu",	        6,		            1},
+	
+	{"^c#ff2add^  ", "~/applications/dwmblocks/scripts/memory",	        6,		            2},
+
+	{"^c#7ccbff^  ", "~/applications/dwmblocks/scripts/gpu-temp",        10,		            3},
 
 	//Refresh interval is hardcoded shell script if changed here need to change in file
-	{"\x04 ", "~/applications/dwmblocks/scripts/net",	        10,		            1},
+	{"^c#ff2add^ ", "~/applications/dwmblocks/scripts/net",	        5,		            4},
 
-	{"\x05 ", "~/applications/dwmblocks/scripts/volume",			10,		            10},
+	{"^c#7ccbff^ ", "~/applications/dwmblocks/scripts/volume",			5,		            5},
 
-	{"\x06 \uf2f1", "~/applications/dwmblocks/scripts/pacupdate",			600,		            11},
+	{"^c#ff2add^  ", "~/applications/dwmblocks/scripts/pacupdate",			600,		            6},
 
-	{"\x07 \uf073 ", "~/applications/dwmblocks/scripts/clock",			10,		            0},
-	{"\x08  ", "", -1, 10},
+	{"^c#7ccbff^  ", "~/applications/dwmblocks/scripts/clock",			10,		            7},
+
+	
+
+	//{"\x08  ", "", -1, 10},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
-static char delim = '|';
+static char delim = '\0';

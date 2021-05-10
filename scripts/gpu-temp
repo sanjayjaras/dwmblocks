@@ -1,8 +1,9 @@
 #! /bin/bash 
 case $BUTTON in
 	1) notify-send "🧠 GPU Details" "$(nvidia-smi)" ;;
-	2) notify-send "Nvidia GPU" "\- Shows GPU Temp.";;
-	3) st -e nvidia-settings ;;
+	#2) notify-send "Nvidia GPU" "\- Shows GPU Temp.";;
+	2) kitty -e nvidia-settings ;;
+	3) kitty -e nvim "$0" ;;
 	
 	
 

@@ -1,8 +1,8 @@
 #! /bin/bash 
 case $BUTTON in
     1) notify-send "🖥 CPU hogs" "$(ps axch -o cmd:15,%cpu --sort=-%cpu | head)\\n(100% per core)" ;;
-    3) st -e htop ;;
-	2) notify-send "\uf2db Cpu module shows CPU load and temperature";;
+    2) kitty -e /home/sanjay/anaconda3/bin/bpytop ;;
+	3) kitty -e nvim "$0" ;;
 	4) xbacklight -inc 10 ;;
 	5) xbacklight -dec 10 ;;
 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;

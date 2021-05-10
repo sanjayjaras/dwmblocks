@@ -1,10 +1,11 @@
 #! /bin/bash 
 
 case $BUTTON in
-	1) blueman-manager ;;
+	#1) blueman-manager ;;
+	1) nm-applet ;;
 	2) notify-send "Network" "Click for Wifi Manager
     Right click Bluetooth Manager";;
-	3) nm-applet ;;
+	3) kitty -e nvim "$0" ;;
 	
 esac
 
