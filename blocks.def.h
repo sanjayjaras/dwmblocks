@@ -14,11 +14,9 @@ static const Block blocks[] = {
 
 	{"^c#ff2add^  ", "~/applications/dwmblocks/scripts/play_next",	        3600,		            13},
 
-	//{"^c#7ccbff^  ", "~/applications/dwmblocks/scripts/show_playing",	        10,		            0},
-
-	{"^c#7ccbff^  ", "~/applications/dwmblocks/scripts/cpu",	        6,		            1},
+	{"^c#7ccbff^  ", "~/applications/dwmblocks/scripts/cpu",	        5,		            1},
 	
-	{"^c#ff2add^  ", "~/applications/dwmblocks/scripts/memory",	        6,		            2},
+	{"^c#ff2add^  ", "~/applications/dwmblocks/scripts/memory",	        5,		            2},
 
 	{"^c#7ccbff^  ", "~/applications/dwmblocks/scripts/gpu-temp",        10,		            3},
 
@@ -32,6 +30,8 @@ static const Block blocks[] = {
 	{"^c#7ccbff^  ", "~/applications/dwmblocks/scripts/clock",			10,		            7},
 
 	
+//	{"^c#7ccbff^  ", "~/applications/dwmblocks/scripts/show_playing &",	        10,		            0}
+	//{" ", "~/applications/dwmblocks/scripts/show_song_info", 5, 14},
 
 	//{"\x08  ", "", -1, 10},
 };

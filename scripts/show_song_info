@@ -1,0 +1,4 @@
+#! /bin/bash 
+
+temp=$(playerctl --player=playerctld metadata --format "{{ title }}")
+echo -e "$temp "
